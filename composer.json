@@ -24,6 +24,13 @@
             "Intraset\\LaravelBasicAuth\\": "src/"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Intraset\\LaravelBasicAuth\\ServiceProvider"
+            ]
+        }
+    },
     "minimum-stability": "dev",
     "prefer-stable": true
 }
