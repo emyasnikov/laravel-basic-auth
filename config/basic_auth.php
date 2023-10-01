@@ -12,10 +12,8 @@ return [
     |
     */
 
-    'basic_auth' => [
-        'enabled' => env('BASIC_AUTH', false),
-        'password' => env('BASIC_AUTH_PASSWORD', ''),
-        'username' => env('BASIC_AUTH_USERNAME', ''),
-    ],
+    'enabled' => env('BASIC_AUTH', false),
+    'password' => env('BASIC_AUTH_PASSWORD', ''),
+    'username' => env('BASIC_AUTH_USERNAME', ''),
 
 ];
