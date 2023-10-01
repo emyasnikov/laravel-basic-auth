@@ -19,9 +19,18 @@
         "php": "^8.0",
         "illuminate/support": "^8.0|^9.0|^10.0"
     },
+    "require-dev": {
+        "laravel/framework": "^10.0",
+        "phpunit/phpunit": "^10.0"
+    },
     "autoload": {
         "psr-4": {
             "Intraset\\LaravelBasicAuth\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Intraset\\LaravelBasicAuth\\Tests\\": "tests/"
         }
     },
     "extra": {
