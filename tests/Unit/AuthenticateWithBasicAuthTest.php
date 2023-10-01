@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Unit;
+namespace Intraset\LaravelBasicAuth\Tests\Unit;
 
 use Illuminate\Http\Request;
 use Intraset\LaravelBasicAuth\AuthenticateWithBasicAuth;
