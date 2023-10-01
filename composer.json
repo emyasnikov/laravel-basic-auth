@@ -1,0 +1,36 @@
+{
+    "name": "intraset/laravel-basic-auth",
+    "description": "Basic authentication using master credentials for the application.",
+    "keywords": [
+        "laravel",
+        "basic",
+        "auth"
+    ],
+    "homepage": "https://github.com/intraset/laravel-basic-auth",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Evgenij Myasnikov",
+            "email": "evgenij.myasnikov@gmail.com",
+            "homepage": "https://github.com/emyasnikov"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^8.0|^9.0|^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Intraset\\LaravelBasicAuth\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Intraset\\LaravelBasicAuth\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
