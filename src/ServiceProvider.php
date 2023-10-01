@@ -2,12 +2,15 @@
 
 namespace Intraset\LaravelBasicAuth;
 
+use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
 class ServiceProvider extends BaseServiceProvider
 {
-    public function boot()
+    public function boot(Kernel $kernel)
     {
+        $kernel->pushMiddleware(AuthenticateWithBasicAuth::class);
+
         $this->publishes([
             __DIR__.'/../config/basic_auth.php' => config_path('basic_auth.php'),
         ], 'config');
