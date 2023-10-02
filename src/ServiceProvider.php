@@ -11,6 +11,8 @@ class ServiceProvider extends BaseServiceProvider
     {
         if (config('basic_auth.global')) {
             $kernel->pushMiddleware(AuthenticateWithBasicAuth::class);
+        } else {
+            $kernel->appendMiddlewareToGroup(config('basic_auth.group'), AuthenticateWithBasicAuth::class);
         }
 
         $this->publishes([

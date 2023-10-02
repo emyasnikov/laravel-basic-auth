@@ -26,5 +26,6 @@ return [
     */
 
     'global' => env('BASIC_AUTH_GLOBAL', false),
+    'group' => env('BASIC_AUTH_GROUP', 'web'),
 
 ];
