@@ -25,6 +25,7 @@ return [
     |
     */
 
+    'alias' => env('BASIC_AUTH_ALIAS', 'auth.basic'),
     'global' => env('BASIC_AUTH_GLOBAL', false),
     'group' => env('BASIC_AUTH_GROUP', 'web'),
 
