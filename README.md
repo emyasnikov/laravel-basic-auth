@@ -12,6 +12,41 @@ Basic authentication using master credentials for the application.
 composer require intraset/laravel-basic-auth
 ```
 
+## Configuration
+
+Publish the configuration file:
+
+```bash
+php artisan vendor:publish --provider="Intraset\LaravelBasicAuth\ServiceProvider"
+```
+
+## Usage
+
+Activate the middleware in the .env file:
+
+```bash
+BASIC_AUTH_ENABLED=true
+```
+
+Set the master credentials in the .env file:
+
+```bash
+BASIC_AUTH_USERNAME=admin
+BASIC_AUTH_PASSWORD=secret
+```
+
+Change the middleware behavior to be applied to the application globally in the .env file:
+
+```bash
+BASIC_AUTH_GLOBAL=true
+```
+
+Change the middleware behavior to be applied to the middleware group in the .env file:
+
+```bash
+BASIC_AUTH_GROUP=web
+```
+
 ## Credits
 
 - [Evgenij Myasnikov](https://github.com/emyasnikov)
