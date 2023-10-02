@@ -9,7 +9,9 @@ class ServiceProvider extends BaseServiceProvider
 {
     public function boot(Kernel $kernel)
     {
-        $kernel->pushMiddleware(AuthenticateWithBasicAuth::class);
+        if (config('basic_auth.global')) {
+            $kernel->pushMiddleware(AuthenticateWithBasicAuth::class);
+        }
 
         $this->publishes([
             __DIR__.'/../config/basic_auth.php' => config_path('basic_auth.php'),
