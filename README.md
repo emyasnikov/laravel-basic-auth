@@ -47,6 +47,16 @@ Change the middleware behavior to be applied to the middleware group in the .env
 BASIC_AUTH_GROUP=web
 ```
 
+## Middleware
+
+The middleware can be used in the following ways:
+
+```php
+Route::get('/', function () {
+    //
+})->middleware('auth.basic');
+```
+
 ## Credits
 
 - [Evgenij Myasnikov](https://github.com/emyasnikov)
