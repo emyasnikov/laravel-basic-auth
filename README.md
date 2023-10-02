@@ -57,6 +57,12 @@ Route::get('/', function () {
 })->middleware('basic.auth');
 ```
 
+## Testing
+
+```bash
+composer test
+```
+
 ## Credits
 
 - [Evgenij Myasnikov](https://github.com/emyasnikov)
