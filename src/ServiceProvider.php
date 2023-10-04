@@ -3,6 +3,7 @@
 namespace Intraset\LaravelBasicAuth;
 
 use Illuminate\Contracts\Http\Kernel;
+use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
 class ServiceProvider extends BaseServiceProvider
@@ -10,6 +11,9 @@ class ServiceProvider extends BaseServiceProvider
     public function boot(Kernel $kernel)
     {
         $middleware = AuthenticateWithBasicAuth::class;
+
+        $router = $this->app->make(Router::class);
+        $router->aliasMiddleware(config('basic_auth.alias'), $middleware);
 
         if (config('basic_auth.global')) {
             $kernel->pushMiddleware($middleware);
