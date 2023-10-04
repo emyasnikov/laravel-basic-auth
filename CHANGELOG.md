@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.2.0 - 2023-10-04
+
+### Added
+
+- feature/alias - Middleware alias
+- feature/settings - Middleware behavior settings
+
 ## v0.1.0 - 2023-10-01
 
 ### Added
