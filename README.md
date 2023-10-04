@@ -54,7 +54,7 @@ The middleware can be used in the following ways:
 ```php
 Route::get('/', function () {
     //
-})->middleware('auth.basic');
+})->middleware('basic.auth');
 ```
 
 ## Credits
