@@ -2,7 +2,7 @@
 
 ## Add
 
-- [ ] Automated tests
+- [x] Automated tests
 - [x] Middleware alias
 - [x] Middleware behavior settings
 - [x] Basic authentication middleware
