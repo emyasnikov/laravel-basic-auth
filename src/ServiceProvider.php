@@ -8,6 +8,11 @@ use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
 class ServiceProvider extends BaseServiceProvider
 {
+    /**
+     * Bootstrap any application services.
+     *
+     * @return void
+     */
     public function boot(Kernel $kernel)
     {
         $middleware = AuthenticateWithBasicAuth::class;
@@ -26,6 +31,11 @@ class ServiceProvider extends BaseServiceProvider
         ], 'config');
     }
 
+    /**
+     * Register any application services.
+     * 
+     * @return void
+     */
     public function register()
     {
         $this->mergeConfigFrom(__DIR__.'/../config/basic_auth.php', 'basic_auth');
