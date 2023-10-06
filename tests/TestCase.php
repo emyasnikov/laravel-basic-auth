@@ -10,6 +10,16 @@ abstract class TestCase extends BaseTestCase
     use CreatesApplication;
 
     /**
+     * Setup the test environment.
+     */
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        //
+    }
+
+    /**
      * Get package providers.
      *
      * @param  \Illuminate\Foundation\Application  $app
@@ -20,5 +30,15 @@ abstract class TestCase extends BaseTestCase
         return [
             'Intraset\LaravelBasicAuth\ServiceProvider',
         ];
+    }
+
+    /**
+     * Tear down the test environment.
+     */
+    protected function tearDown(): void
+    {
+        //
+
+        parent::tearDown();
     }
 }
