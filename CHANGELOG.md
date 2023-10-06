@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.0.0 - 2023-10-06
+
+### Added
+
+- feature/tests - Automated tests
+
 ## v0.2.0 - 2023-10-04
 
 ### Added
