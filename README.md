@@ -35,6 +35,12 @@ BASIC_AUTH_USERNAME=admin
 BASIC_AUTH_PASSWORD=secret
 ```
 
+Change the middleware alias in the .env file:
+
+```bash
+BASIC_AUTH_ALIAS=basic.auth
+```
+
 Change the middleware behavior to be applied to the application globally in the .env file:
 
 ```bash
